@@ -2,7 +2,9 @@
 //Ejercicio 1
 function meses123() {
     let meses123 = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-    console.log(meses123);
+    for(let i= 0; i < meses123.length; i++){
+        console.log(meses123[i]);
+    }
 }
 //Ejercicio 2
 function elpepe(){
@@ -17,7 +19,7 @@ for (let i = 0; i < valores.length; i++){
     }
 }
 
-for(let  i = 0; i < aux.length -1; i++) {
+for (let  i = 0; i < aux.length -1; i++) {
     if (aux[i].length > aux[i+1].length && i+1 < aux.length) {
         posicion = i;
         valor = aux[i + 1];
@@ -33,3 +35,5 @@ else{
     console.log("adios es mayor");
 }
 }
+
+//Ejercicio 3
