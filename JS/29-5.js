@@ -86,6 +86,6 @@ function factorial (n) {
 	var total = parseInt(prompt('ingresar numero factorial'));
 	for (i=1; i<=n; i++) {
 		total = total * i; 
-	}
-	console.log; 
+        console.log(factorial[total]); 
 }
+	}
