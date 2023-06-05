@@ -82,7 +82,10 @@ var dni, letra_in, letra_calculada;
 
 //Ejercicio 5
 
-for (let io = 0; io < array.length; io++) {
-    const element = array[io];
-    
+function factorial (n) {
+	var total = parseInt(prompt('ingresar numero factorial'));
+	for (i=1; i<=n; i++) {
+		total = total * i; 
+	}
+	console.log; 
 }
