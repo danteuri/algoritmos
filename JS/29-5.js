@@ -90,3 +90,15 @@ function ejercicio5 (){
     }
         console.log(aux); 
 }
+
+//Ejercicio 6
+
+function Ejercicio6() {
+    var num = parseInt(prompt('Ingresa un numero entero que sea par o impar'));
+    if (num - num -1 == 1) {
+        console.log('el numero ingresado es impar')
+    }
+    else{
+        console.log('su numero ingresado es par')
+    }
+}
