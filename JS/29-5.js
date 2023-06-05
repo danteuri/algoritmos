@@ -55,4 +55,3 @@ var numero2 = 8;
 }
 
 //Ejercicio 4
-
