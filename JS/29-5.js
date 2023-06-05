@@ -62,20 +62,27 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
 var dni, letra_in, letra_calculada;
 
  function input_dni() {
-     dni = parseInt(prompt('Introduce el número del DNI'));
-               letra_in = prompt('Introduce la letra').toUpperCase();
+     dni = parseInt(prompt('Introduce el número del DNI menor a 8 digitos'));
+               letra_in = prompt('Introduce el numero divisor').toUpperCase();
 
                if ((dni >= 0) && (dni <= 99999999)) {
                    letra_calculada = letras[dni%23];
                    if (letra_in == letra_calculada) {
                        document.getElementById('resultado').innerHTML = "<p style='color:red;font-size:1.6em'>El dni es " + dni + " con letra " + letra_calculada + '</p>';
-                       alert('El dni es ' + dni + ' con letra ' + letra_calculada);
+                       console.log('El dni es ' + dni + ' con letra ' + letra_calculada);
                    } else {
-                       alert('La letra ' + letra_in + ' no coincide con la calculada → ' + letra_calculada) ;
+                       console.log('La letra ' + letra_in + ' no coincide con la calculada → ' + letra_calculada) ;
                    }
                } else {
-                   alert('No es correcto el valor introducido');
+                   console.log('No es correcto el valor introducido');
                }
            }
            input_dni();
+}
+
+//Ejercicio 5
+
+for (let io = 0; io < array.length; io++) {
+    const element = array[io];
+    
 }
