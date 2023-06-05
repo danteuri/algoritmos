@@ -78,5 +78,4 @@ var dni, letra_in, letra_calculada;
                }
            }
            input_dni();
-        <div id="resultado"></div>
 }
