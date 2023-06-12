@@ -65,7 +65,7 @@ var dni, letra_in, letra_calculada;
      dni = parseInt(prompt('Introduce el número del DNI menor a 8 digitos'));
                letra_in = prompt('Introduce el numero divisor').toUpperCase();
 
-               if ((dni >= 0) && (dni <= 99999999)) {
+               if ((dni > 0) && (dni <= 99999999)) {
                    letra_calculada = letras[dni%23];
                    if (letra_in == letra_calculada) {
                        document.getElementById('resultado').innerHTML = "<p style='color:red;font-size:1.6em'>El dni es " + dni + " con letra " + letra_calculada + '</p>';
@@ -96,10 +96,36 @@ function ejercicio5 (){
 
 function Ejercicio6() {
     var num = parseInt(prompt('Ingresa un numero entero que sea par o impar'));
-    if (num - num -1 == 1) {
+    if ((num % 2) != 0) {
         console.log('el numero ingresado es impar')
     }
     else{
         console.log('su numero ingresado es par')
+    }
+}
+
+//Ejercicio 7
+//Definir una función que muestre información sobre una cadena de texto que se le pasa
+//como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena
+//está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
+function Ejercicio7() {
+    var cadena = parseInt(prompt('Introduce tu cadena de texto'))
+    let minuscula = 0;
+    let mayuscula = 0;
+   
+    for (let i = 0; i < cadena.length; i++) {
+        if (cadena.charCodeAt(i) > 64 && cadena.charCodeAt(i) < 91) {
+            mayuscula++;
+        } else if (cadena.charCodeAt(i) > 96 && cadena.charCodeAt(i) < 122){
+            minuscula++;
+        }
+    }
+
+    if (mayuscula > 0 && minuscula > 0) {
+        console.log("Es una mezcla de ambas.");
+    }else if (mayuscula == 0 && minuscula > 0) {
+        console.log("Formado sólo por minúsculas.");
+    }else if (mayuscula > 0 && minuscula == 0) {
+        console.log("Formado sólo por mayusculas.");
     }
 }
