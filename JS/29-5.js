@@ -89,6 +89,7 @@ function ejercicio5 (){
         aux = aux * i; 
     }
         console.log(aux); 
+        console.log(as)
 }
 
 //Ejercicio 6
