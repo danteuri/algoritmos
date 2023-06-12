@@ -109,7 +109,7 @@ function Ejercicio6() {
 //como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena
 //está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
 function Ejercicio7() {
-    var cadena = parseInt(prompt('Introduce tu cadena de texto'))
+    var cadena = 'AAAA'
     let minuscula = 0;
     let mayuscula = 0;
    
@@ -127,5 +127,17 @@ function Ejercicio7() {
         console.log("Formado sólo por minúsculas.");
     }else if (mayuscula > 0 && minuscula == 0) {
         console.log("Formado sólo por mayusculas.");
+    }
+}
+//Ejercicio8
+function Ejercicio8(){
+    var tecstoa = prompt('Inserte cadena de texto polindromo');
+    var tecstoxd = tecstoa.split(" ").join("");
+    var texverso = tecstoxd.split("").reverse().join("");
+    if (texverso.toUpperCase() === tecstoxd.toUpperCase()) {
+        console.log('familia... Hoy se come');
+    }
+    else{
+        console.log('bolas tristes');
     }
 }
