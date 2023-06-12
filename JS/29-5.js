@@ -141,3 +141,7 @@ function Ejercicio8(){
         console.log('bolas tristes');
     }
 }
+//Ejercicio 9
+function Ejercicio9()[
+    
+]
