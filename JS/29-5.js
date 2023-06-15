@@ -141,7 +141,32 @@ function Ejercicio8(){
         console.log('bolas tristes');
     }
 }
-//Ejercicio 9
-function Ejercicio9()[
-    
-]
+//Ejercicio 9 hecho aparte en otro archivo.js
+//Ejercicio 10
+function Ejercicio10() {
+    function simularLanzamientoDados() {
+        var resultados = [];
+      
+        for (var i = 0; i < 36000; i++) {
+          var dado1 = Math.floor(Math.random() * 6) + 1; // Genera un número aleatorio entre 1 y 6 para el primer dado
+          var dado2 = Math.floor(Math.random() * 6) + 1; // Genera un número aleatorio entre 1 y 6 para el segundo dado
+      
+          var suma = dado1 + dado2;
+      
+          if (resultados[suma]) {
+            resultados[suma] += 1;
+          } else {
+            resultados[suma] = 1;
+          }
+        }
+      
+        return resultados;
+      }
+      
+      // Ejecutar la simulación y mostrar los resultados
+      var resultados = simularLanzamientoDados();
+      for (var i = 2; i <= 12; i++) {
+        console.log("Suma " + i + ": " + (resultados[i] || 0) + " apariciones");
+      }
+      
+}
